@@ -12,7 +12,7 @@ INNER JOIN ingredients ig ON rs.ing_id = ig.ing_id
 GROUP BY it.item_cat, it.item_name, it.item_size
 ORDER BY it.item_cat
 
---Món có margin cao nhất / thấp nhất
+--Món có margin cao nhất
 --
 WITH Phi_Nguyen_Lieu AS (
 SELECT 
