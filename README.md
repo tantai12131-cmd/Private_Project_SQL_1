@@ -105,7 +105,7 @@ ORDER BY
     Doanh_Thu DESC
 ```
 
-![Top_Revenue_Items](Picture\revenue_by_item.png)
+![Top_Revenue_Items](Picture/revenue_by_item.png)
 
 **b) Xếp hạng món theo doanh thu trong từng category**
 
@@ -141,7 +141,7 @@ ORDER BY
     Category, Xep_Hang_Cat;
 ```
 
-![Rank_Revenue_Items](Picture\rank_by_category.png)
+![Rank_Revenue_Items](Picture/rank_by_category.png)
 #### 2. Chi phí (Cost)
 
 **a) Chi phí nguyên liệu của từng món**
@@ -199,7 +199,7 @@ FROM Phi_Nguyen_Lieu
 ORDER BY Category, Rank_Cao_Nhat
 ```
 
-![Margin](Picture\margin_by_item.png)
+![Margin](Picture/margin_by_item.png)
 #### 3. Nhân sự (Staff)
 
 **Số ca làm việc của từng nhân viên**
@@ -215,7 +215,6 @@ GROUP BY
     st.first_name, st.last_name, st.staff_id
 ```
 
-*(Ảnh kết quả: chèn ở đây)*
 
 #### 4. Đơn hàng (Orders)
 
@@ -237,7 +236,7 @@ ORDER BY
     Ngay
 ```
 
-![in_or_out](Picture\in_out_by_day.png)
+![in_or_out](Picture/in_out_by_day.png)
 #### 5. Insight kinh doanh — Doanh thu lũy kế (Running Total)
 
 Tính doanh thu lũy kế (cumulative) theo từng category, sắp xếp theo doanh thu giảm dần, sử dụng window function `SUM() OVER()`.
@@ -270,7 +269,7 @@ ORDER BY
     Category, Luy_Ke_Doanh_Thu_Tung_Mon;
 ```
 
-![Lũy_Kế](Picture\cumulative_revenue.png)
+![Lũy_Kế](Picture/cumulative_revenue.png)
 ## Insight
 
 Từ kết quả các truy vấn SQL trên, một số phát hiện chính:
