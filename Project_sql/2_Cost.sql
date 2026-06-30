@@ -4,7 +4,10 @@
 SELECT 
     it.item_name AS Ten_Mon,
     it.item_cat AS Category,
-    it.item_size,
+    CASE 
+            WHEN it.item_size = 'N/A' THEN 'Standard'
+            ELSE it.item_size 
+        END AS Kich_Thuoc,
     round(SUM(rs.quantity * (ig.ing_price / ig.ing_weight)),2) AS Phi_Nguyen_Lieu
 FROM items it
 INNER JOIN recipes rs ON it.sku = rs.recipe_id
@@ -18,7 +21,10 @@ WITH Phi_Nguyen_Lieu AS (
 SELECT 
     it.item_name    AS Ten_Mon,
     it.item_cat     AS Category,
-    it.item_size,
+    CASE 
+            WHEN it.item_size = 'N/A' THEN 'Standard'
+            ELSE it.item_size 
+        END AS Kich_Thuoc,
     round(SUM(rs.quantity * (ig.ing_price / ig.ing_weight)),2) AS Phi_Nguyen_Lieu,
     it.item_price AS Gia_Ban,
     it.item_price - round(SUM(rs.quantity * (ig.ing_price / ig.ing_weight)),2) as Loi_Nhuan
@@ -29,8 +35,9 @@ GROUP BY it.item_cat, it.item_name, it.item_size, Gia_Ban
 ORDER BY it.item_cat
 )
 SELECT 
-    Ten_Mon,
     Category,
+    Ten_Mon,
+    Kich_Thuoc,
     Gia_Ban,
     Phi_Nguyen_Lieu,
     Loi_Nhuan,

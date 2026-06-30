@@ -1,13 +1,16 @@
---Running total doanh thu theo thứ tự order (tích lũy)?
+--Running total doanh thu theo thứ tự order (tích lũy)
 --
 
 WITH Tong_Doanh_Thu_Tung_Mon AS (
     SELECT 
         it.item_cat AS Category,
         it.item_id,
-        it.item_name as Ten_Mon, 
-        it.item_size,
-        SUM(it.item_price* od.quantity) as Doanh_Thu
+        it.item_name AS Ten_Mon, 
+        CASE 
+            WHEN it.item_size = 'N/A' THEN 'Standard'
+            ELSE it.item_size 
+        END AS Kich_Thuoc,
+        SUM(it.item_price * od.quantity) as Doanh_Thu
     FROM 
         orders od
     INNER JOIN items it ON od.item_id = it.item_id
