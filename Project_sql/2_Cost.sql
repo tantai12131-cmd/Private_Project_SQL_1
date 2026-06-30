@@ -1,6 +1,5 @@
 --Chi phí nguyên liệu của từng món
 --
-
 SELECT 
     it.item_name AS Ten_Mon,
     it.item_cat AS Category,

@@ -1,6 +1,5 @@
 --Running total doanh thu theo thứ tự order (tích lũy)
 --
-
 WITH Tong_Doanh_Thu_Tung_Mon AS (
     SELECT 
         it.item_cat AS Category,
