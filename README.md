@@ -13,7 +13,8 @@ Toàn bộ quy trình được thực hiện theo từng bước, đi từ dữ 
 ## Background
 
 Dữ liệu được sử dụng trong dự án này là bộ **Coffee Shop Sales/Inventory/Staff dataset** (nguồn: [Kaggle](https://www.kaggle.com/datasets/viramatv/coffee-shop-data)), bao gồm 8 bảng dữ liệu có quan hệ với nhau (multi-table relational structure):
- bao gồm 8 bảng dữ liệu có quan hệ với nhau (multi-table relational structure):
+
+
 
 | Bảng | Mô tả | Số dòng |
 |---|---|---|
