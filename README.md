@@ -6,7 +6,7 @@
 
 Dự án mô phỏng vai trò của một Data Analyst được giao nhiệm vụ phân tích toàn bộ chuỗi dữ liệu kinh doanh của quán — từ doanh thu, chi phí nguyên liệu, hiệu suất nhân viên cho đến tình trạng tồn kho — để trả lời các câu hỏi kinh doanh cốt lõi và đưa ra khuyến nghị giúp cải thiện lợi nhuận.
 
-Toàn bộ quy trình được Xây dựng quy trình ETL: đi từ dữ liệu thô (raw data) từ Kaggle, xử lý và làm sạch dữ liệu trong Excel, sau đó nạp vào PostgreSQL để phân tích. 
+Toàn bộ quy trình được Xây dựng quy trình ETL process: đi từ dữ liệu thô (raw data) từ Kaggle, xử lý và làm sạch dữ liệu trong Excel, sau đó nạp vào PostgreSQL để phân tích. 
 
 > 🔍 Bạn có thể xem chi tiết các câu truy vấn SQL tại đây: [project_sql folder](/Project_sql/)
 
