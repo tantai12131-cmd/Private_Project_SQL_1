@@ -46,8 +46,6 @@ Dữ liệu được sử dụng trong dự án này là bộ **Coffee Shop Sale
 
 ## The Analysis
 
-*(Phần này sẽ được bổ sung chi tiết sau)*
-
 ### Excel (Data Cleaning)
 
 - **BEFORE:** [coffee_shop_raw](excel_file/coffee_shop_raw.xlsx)
